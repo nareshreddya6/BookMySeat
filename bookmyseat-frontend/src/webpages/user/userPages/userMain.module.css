@@ -1,0 +1,21 @@
+.mainContainer {
+    margin-top: 80px;
+    display: flex;
+    /* background-color: rgba(112, 128, 144, 0.7); */
+    justify-content: space-between;
+  }
+  .mainContainer > :first-child {
+    width: 70px;
+  }
+  .mainContainer > :last-child {
+    width: calc(100% - 70px);
+  }
+  
+@media screen and (max-width: 768px) {
+  .mainContainer > :first-child{
+    width: 0px;
+  }
+  .mainContainer > :last-child{
+    width: 100%;
+  }
+}

@@ -1,0 +1,212 @@
+/* Target .locationContainer */
+.comboContainer {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Target .selectNeededOptions within .comboContainer */
+.comboContainer .selectNeededOptions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  margin-bottom: 50px;
+}
+
+/* Target .selectionBtn and .activeButton within .selectNeededOptions*/
+.selectNeededOptions .selectionBtn,
+.selectNeededOptions .activeButton {
+  background-color: rgb(194, 192, 192);
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Target .activeButton within .selectNeededOptions*/
+.selectNeededOptions .activeButton {
+  background-color: rgb(69, 224, 69);
+}
+
+/* Target .addContainer */
+.addContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 80%;
+}
+
+/* Target .addName */
+.addName {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+/* Target div tags within .addName */
+.addName .inputLabelCombo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+/* Target label tags within .inputLabelCombo */
+.addName .inputLabelCombo label {
+  width: 150px;
+  font-size: 18px;
+}
+
+/* Target Input tags within .inputLabelCombo */
+.addName .inputLabelCombo input {
+  width: 250px;
+  font-size: 18px;
+  padding: 5px;
+  border: 1px solid #bbbbbc;
+  border-radius: 5px;
+}
+
+/* Target add locaion button within .addName */
+.addName .addBtn {
+  width: 30%;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  background-color: #209f5f;
+  color: #fff;
+}
+
+/* Target add locaion button within .addName */
+.addName .addBtn:hover {
+  background-color: rgb(4, 201, 4);
+  color: #000;
+}
+
+/* Target .viewContainer */
+.viewContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Target .viewName */
+.viewName {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.viewName p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Target .searchInput within .viewName */
+.viewName .searchInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Target input within .viewName */
+.viewName input {
+  font-size: 20px;
+  padding: 5px;
+  padding-left: 10px;
+  border: 1px solid #bbbbbc;
+  border-radius: 5px;
+}
+
+/* Target table within .viewName */
+.viewName table {
+  margin-top: 2%;
+  white-space: nowrap;
+  border-spacing: 0;
+}
+
+/* Target table headers within .viewName */
+.viewName table th {
+  height: 60px;
+  width: 300px;
+  text-align: left;
+  padding-left: 1%;
+  border-bottom: 1px solid grey;
+  text-align: center;
+}
+
+/* Target thead within .viewName */
+.viewName thead {
+  background-color: rgb(168, 191, 238);
+}
+
+/* Target table cells within .viewName */
+.viewName td {
+  height: 60px;
+  text-align: center;
+  padding-left: 1%;
+  border-bottom: 1px solid grey;
+}
+
+/* Target table cells within .viewName */
+.viewName td span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+/*Pagination CSS*/
+.viewContainer .pagination {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.viewContainer .paginationButton {
+  background-color: rgba(128, 128, 128, 0.7);
+  width: 30px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  padding: 5px 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.viewContainer .paginationButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.viewContainer .activePage {
+  background-color: rgb(28, 244, 35);
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .comboContainer {
+    padding: 30px;
+  }
+
+  .viewName p {
+    font-size: 16px;
+  }
+
+  .viewName input {
+    font-size: 16px;
+    width: 35%;
+  }
+}

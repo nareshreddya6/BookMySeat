@@ -1,0 +1,265 @@
+/* Target .actionCenterContainer */
+.actionCenterContainer {
+  margin-top: 15px;
+  width: 100%;
+}
+
+/* Target .selectNeededOptions within .actionCenterContainer */
+.actionCenterContainer .selectNeededOptions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+/* Target .waitingBtn, .approvedBtn, .rejectedBtn and .activeButton within .selectNeededOptions*/
+.selectNeededOptions .waitingBtn,
+.selectNeededOptions .approvedBtn,
+.selectNeededOptions .rejectedBtn,
+.selectNeededOptions .activeButton {
+  width: 100px;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.selectNeededOptions .waitingBtn {
+  background-color: rgb(248, 184, 66);
+}
+.selectNeededOptions .approvedBtn {
+  background-color: rgb(135, 247, 135);
+}
+.selectNeededOptions .rejectedBtn {
+  background-color: rgb(243, 109, 109);
+}
+
+/* Target .activeButton within .selectNeededOptions*/
+.selectNeededOptions .activeButton {
+  background-color: rgb(168, 191, 238);
+}
+
+/* Target .inWaitingContainer, .approvedContainer, .rejectedContainer */
+.inWaitingContainer,
+.approvedContainer,
+.rejectedContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Target .inWaitingName, .approvedName, .rejectedName */
+.inWaitingName,
+.approvedName,
+.rejectedName {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 2% 5%;
+}
+
+/* Target .searchInput within .inWaitingName, .approvedName, .rejectedName */
+.inWaitingName .searchInput,
+.approvedName .searchInput,
+.rejectedName .searchInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Target input within .inWaitingName, .approvedName, .rejectedName */
+.inWaitingName input,
+.approvedName input,
+.rejectedName input {
+  font-size: 18px;
+  padding: 5px;
+  padding-left: 10px;
+  border: 1px solid #bbbbbc;
+  border-radius: 5px;
+}
+
+/* Target table within .inWaitingName, .approvedName, .rejectedName */
+.inWaitingName table,
+.approvedName table,
+.rejectedName table {
+  margin-top: 2%;
+  white-space: nowrap;
+  border-spacing: 0;
+}
+
+/* Target table headers within .inWaitingName, .approvedName, .rejectedName */
+.inWaitingName table th,
+.approvedName table th,
+.rejectedName table th {
+  height: 60px;
+  width: 300px;
+  text-align: center;
+  padding-left: 1%;
+  border-bottom: 1px solid grey;
+}
+
+/* Target thead within .inWaitingName, .approvedName, .rejectedName */
+.inWaitingName thead,
+.approvedName thead,
+.rejectedName thead {
+  background-color: rgb(168, 191, 238);
+}
+
+/* Target table cells within .inWaitingName, .approvedName, .rejectedName */
+.inWaitingName td,
+.approvedName td,
+.rejectedName td {
+  height: 60px;
+  width: 300px;
+  text-align: center;
+  padding-left: 1%;
+  border-bottom: 1px solid grey;
+}
+
+/* Targeting span within .approvedName, .rejectedName */
+.approvedName span,
+.rejectedName span {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Targeting span within .approvedName */
+.approvedName span {
+  /* background-color: rgb(61, 252, 61); */
+  background-color: #008542;
+  color: #fff;
+}
+
+/* Targeting span within .rejectedName */
+.rejectedName span {
+  background-color: rgb(255, 62, 62);
+}
+
+/* Target approve & reject button within .inWaitingName */
+.inWaitingName .approveBtn,
+.inWaitingName .rejectBtn {
+  width: 50%;
+  font-size: 16px;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Target approve button background within .inWaitingName */
+.inWaitingName .approveBtn {
+  background-color: #008542;
+}
+
+/* Target reject button within .inWaitingName */
+.inWaitingName .approveBtn:hover {
+  background-color: rgb(2, 186, 2);
+  cursor: pointer;
+}
+
+/* Target reject button background within .inWaitingName */
+.inWaitingName .rejectBtn {
+  background-color: rgb(183, 0, 0);
+}
+
+/* Target reject button within .inWaitingName */
+.inWaitingName .rejectBtn:hover {
+  background-color: rgb(245, 0, 0);
+  cursor: pointer;
+}
+
+/*Pagination CSS*/
+.inWaitingContainer .pagination,
+.rejectedContainer .pagination,
+.approvedContainer .pagination {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inWaitingContainer .paginationButton,
+.rejectedContainer .paginationButton,
+.approvedContainer .paginationButton {
+  background-color: rgba(128, 128, 128, 0.7);
+  width: 30px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  padding: 5px 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.inWaitingContainer .paginationButton:disabled,
+.rejectedContainer .paginationButton:disabled,
+.approvedContainer .paginationButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.inWaitingContainer .activePage,
+.rejectedContainer .activePage,
+.approvedContainer .activePage {
+  background-color: rgb(28, 244, 35);
+  color: #ffffff;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .inWaitingContainer,
+  .approvedContainer,
+  .rejectedContainer {
+    padding: 5px;
+  }
+  .inWaitingName,
+  .approvedName,
+  .rejectedName {
+    padding: 0%;
+    width: 100%;
+  }
+
+  .inWaitingName .approveBtn,
+  .inWaitingName .rejectBtn {
+    width: fit-content;
+    padding: 5px;
+  }
+
+  .inWaitingName table,
+  .approvedName table,
+  .rejectedName table {
+    overflow: auto;
+    text-wrap: wrap;
+  }
+
+  .approvedName span,
+  .rejectedName span {
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .inWaitingName table th:nth-child(3),
+  .inWaitingName table td:nth-child(3),
+  .approvedName table th:nth-child(3),
+  .approvedName table td:nth-child(3),
+  .rejectedName table th:nth-child(3),
+  .rejectedName table td:nth-child(3) {
+    max-width: 180px;
+    min-width: 180px;
+  }
+
+  .inWaitingName table th:nth-child(2),
+  .inWaitingName table td:nth-child(2),
+  .approvedName table th:nth-child(2),
+  .approvedName table td:nth-child(2),
+  .rejectedName table th:nth-child(2),
+  .rejectedName table td:nth-child(2) {
+    display: none;
+  }
+}

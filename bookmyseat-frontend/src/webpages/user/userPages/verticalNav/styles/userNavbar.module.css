@@ -1,0 +1,113 @@
+.userNavbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  width: 70px;
+  height: 100vh;
+  background-color: rgb(224, 225, 221);
+  transition: width 0.3s linear;
+  padding-top: 80px;
+  z-index: 2;
+}
+
+.toggleMenu {
+  display: none;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  width: 50px;
+  background-color: rgb(224, 225, 221);
+  z-index: 2;
+}
+
+.userNavbar:hover {
+  width: 250px;
+}
+
+.toggleMenu li {
+  list-style: none;
+}
+
+.userNavbar ul li:hover {
+  background-color: #517fa1;
+  color: aquamarine;
+  cursor: pointer;
+}
+
+.toggleMenu span,
+.userNavbar span {
+  display: none;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s linear;
+}
+
+.userNavbar:hover span {
+  display: inline-block;
+}
+
+.userNavbar .active {
+  background-color: #184e77;
+  color: aquamarine;
+}
+
+.toggleMenu .link,
+.userNavbar .link {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  justify-content: center;
+}
+
+.toggleMenu .link {
+  height: 40px;
+}
+
+.userNavbar:hover .link {
+  justify-content: flex-start;
+}
+
+.togglelink .icons,
+.userNavbar .icons {
+  width: 50px;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .toggleMenu {
+    display: block;
+  }
+
+  .userNavbar {
+    display: none;
+  }
+
+  .toggled {
+    display: block;
+    width: 70px;
+    height: max-content;
+    right: 0;
+    left: calc(100% - 70px);
+  }
+
+  .toggled:hover .link {
+    justify-content: center;
+  }
+
+  .userNavbar:hover {
+    width: 70px;
+  }
+
+  .userNavbar:hover span {
+    display: none;
+  }
+}
+
+@media print{
+  .userNavbar{
+    display: none;
+  }
+}

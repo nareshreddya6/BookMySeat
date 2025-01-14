@@ -1,0 +1,212 @@
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+  padding: 100px 0;
+
+}
+.thirdFloor {
+  margin: auto;
+  width: 800px;
+  height: fit-content;
+  max-height: 800px;
+  border: 2px solid black;
+  position: relative;
+  background-color: white;
+}
+.heading {
+  text-align: center;
+  border: 2px solid black;
+  background-color: rgb(127, 202, 255);
+}
+.mapping {
+  background-color: rgba(111, 128, 144, 0.3);
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+}
+.seatMappingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1.5fr) 2fr 4fr;
+  grid-template-rows: 0.5fr 1fr 1fr;
+}
+.mapContainer > div {
+  /* border: 2px solid red; */
+}
+.container1 {
+  grid-column: 1;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.container1 > div {
+  border: 1px solid black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+}
+.container1 > :nth-child(2) {
+  height: 40%;
+}
+.container2 {
+  grid-column: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.container2 > div {
+  border: 1px solid black;
+  width: 100%;
+  height: 15%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container2 > :nth-child(5) {
+  border: 0;
+  height: 25%;
+}
+.container3 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+.container4 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 6fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+.container4 > :nth-child(4) {
+  width: 100%;
+  text-align: center;
+}
+.container4 > :nth-child(8) {
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+}
+.container4 > :nth-child(8) > div {
+  width: 40%;
+  border: 1px solid black;
+}
+.container4 > :nth-child(8) > :nth-child(2) {
+  border: 0;
+}
+.container5 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+.container5 > :nth-child(1) {
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.container6 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 5fr 2fr;
+  grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr;
+}
+.container6 > :nth-child(1) {
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+.container6 > :nth-child(5) {
+  grid-column: 5;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+.container6 > :nth-child(6) {
+  grid-column: 6;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+.container6 > :nth-child(6) > div {
+  border: 1px solid black;
+}
+.container6 > :nth-child(6) > div:first-child {
+  height: 80%;
+}
+.container6 > :nth-child(6) > div:last-child {
+  height: 20%;
+}
+
+.container6 > :nth-child(5) > div {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30%;
+  border: 1px solid black;
+}
+.container6 > :nth-child(5) > div:first-child {
+  height: 70%;
+}
+.container6 > :nth-child(5) > div:last-child > div {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+.container7 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+.container7 > :nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.container8 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+.container8 > :nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 12;
+}
+.container8 > :nth-child(2) {
+  grid-row-start: 2;
+  grid-row-end: 7;
+}
+.circularConderenceRoom {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 430px;
+  left: 280px;
+}
+.circularConderenceRoom > img {
+  width: 100%;
+  height: 100%;
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 768px){
+  .seatMappingContainer{
+    flex-direction: column;
+    text-align: center;
+  }
+}

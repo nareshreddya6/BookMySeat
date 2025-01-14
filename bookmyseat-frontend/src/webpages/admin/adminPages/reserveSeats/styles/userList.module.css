@@ -1,0 +1,60 @@
+/* styles for employee details container */
+.employeedetails {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 2% 5%;
+}
+/* styles for table */
+.employeedetails .usertable {
+  margin-top: 2%;
+  white-space: nowrap;
+  border-spacing: 0;
+}
+/* styles for table headings */
+.usertable th {
+  height: 60px;
+  width: 300px;
+  text-align: center;
+  border-bottom: 1px solid grey;
+}
+
+.usertable thead {
+  background-color: rgb(168, 191, 238);
+}
+/* styles for table data */
+.usertable td {
+  height: 60px;
+  text-align: center;
+  border-bottom: 1px solid grey;
+}
+/* styles for reserve button */
+.reserveButton {
+  width: 60%;
+  height: 60%;
+  font-size: 20px;
+  background: #1f2937;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.reserveButton:hover {
+  background: #209f5f;
+}
+/* styles for remove reservation button */
+.removeReserveButton {
+  width: 80%;
+  height: 60%;
+  font-size: 20px;
+  background: #f56363;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+.removeReserveButton:hover {
+  background: #e62222;
+}

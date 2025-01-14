@@ -1,0 +1,42 @@
+/* styles for vison container */
+.ourVision {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1320px;
+}
+/* styles for image container */
+.imageContainer {
+  height: 90%;
+  width: 40%;
+  background: url("/public/assets/Images/messageImage.jpg") center center/cover no-repeat;
+  border-radius: 50%;
+}
+/* styles for vision message container */
+.visionMessage {
+  width: 60%;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.visionMessage > h3 {
+  margin: 20px 0;
+  font-size: 38px;
+}
+.visionMessage > p {
+  font-size: 24px;
+}
+/* styles for screen widths less than 760px*/
+@media screen and (max-width: 760px) {
+  .imageContainer {
+    display: none;
+  }
+  .visionMessage {
+    width: 100%;
+  }
+}

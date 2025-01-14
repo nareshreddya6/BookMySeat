@@ -1,0 +1,119 @@
+.heading {
+  text-align: center;
+}
+.errorMessage{
+  color: red;
+  text-align: center;
+}
+/* styles for form container */
+.formContainer {
+  margin: 20px auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 2px;
+  width: fit-content;
+  gap: 5px;
+  padding: 10px 20px;
+}
+/* styles for all divs - input fields in form */
+.formContainer > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* styles for form label */
+.formLabel {
+  padding: 10px;
+  width: 300px;
+  text-align: left;
+  font-size: 20px;
+  color: #333;
+}
+/* styles for form inputs */
+.formInput {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 20px;
+  border: 1px solid black;
+}
+.seatNumbers {
+  width: 600px;
+}
+
+/*styles for custom dropdown */
+.customDropdown {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 300px;
+}
+
+.dropdownLabel {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.7);
+}
+/* styles for dropdown item list */
+.dropdownList {
+  z-index: 1;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 3px;
+}
+/* styles for each item */
+.dropdownItem {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+/* styles on hover of dropdown items */
+.dropdownItem:hover {
+  background-color: #f0f0f0;
+}
+/* styles for selected seat */
+.selectSeat {
+  width: 250px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+.seatNumber {
+  align-items: center;
+}
+
+/* styles for reserve button */
+.reserveProject {
+  width: 30%;
+  height: 60px;
+  font-size: 24px;
+  background: #1f2937;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.reserveProject:hover {
+  background: #209f5f;
+}

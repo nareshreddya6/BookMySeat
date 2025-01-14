@@ -1,0 +1,107 @@
+.receptionNavbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  width: 70px;
+  height: 100vh;
+  background-color: rgb(224, 225, 221);
+  transition: width 0.3s linear;
+  padding-top: 80px;
+  z-index: 2;
+}
+
+.toggleMenu {
+  display: none;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  width: 50px;
+  background-color: rgb(224, 225, 221);
+  z-index: 2;
+}
+
+.receptionNavbar:hover {
+  width: 250px;
+}
+
+.toggleMenu li {
+  list-style: none;
+}
+
+.receptionNavbar ul li:hover {
+  background-color: #517fa1;
+  color: aquamarine;
+  cursor: pointer;
+}
+
+.toggleMenu span,
+.receptionNavbar span {
+  display: none;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s linear;
+}
+
+.receptionNavbar:hover span {
+  display: inline-block;
+}
+
+.receptionNavbar .active {
+  background-color: #184e77;
+  color: aquamarine;
+}
+
+.toggleMenu .link,
+.receptionNavbar .link {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  justify-content: center;
+}
+
+.toggleMenu .link {
+  height: 40px;
+}
+
+.receptionNavbar:hover .link {
+  justify-content: flex-start;
+}
+
+.togglelink .icons,
+.receptionNavbar .icons {
+  width: 50px;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .toggleMenu {
+    display: block;
+  }
+
+  .receptionNavbar {
+    display: none;
+  }
+
+  .toggled {
+    display: block;
+    width: 70px;
+    height: max-content;
+    right: 0;
+    left: calc(100% - 70px);
+  }
+
+  .toggled:hover .link {
+    justify-content: center;
+  }
+
+  .receptionNavbar:hover {
+    width: 70px;
+  }
+
+  .receptionNavbar:hover span {
+    display: none;
+  }
+}

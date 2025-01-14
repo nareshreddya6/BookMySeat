@@ -1,0 +1,114 @@
+/* Target .holidayViewContainer */
+.holidayViewContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Target .holidayViewName */
+.holidayViewName {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.holidayViewName p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Target .searchInput within .holidayViewName */
+.holidayViewName .searchInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Target input within .holidayViewName */
+.holidayViewName input {
+  font-size: 20px;
+  padding: 5px;
+  padding-left: 10px;
+  border: 1px solid #bbbbbc;
+  border-radius: 5px;
+}
+
+/* Target table within .holidayViewName */
+.holidayViewName table {
+  margin-top: 2%;
+  white-space: nowrap;
+  border-spacing: 0;
+}
+
+/* Target table headers within .holidayViewName */
+.holidayViewName table th {
+  height: 60px;
+  width: 300px;
+  text-align: left;
+  padding-left: 1%;
+  border-bottom: 1px solid grey;
+  text-align: center;
+}
+
+/* Target thead within .holidayViewName */
+.holidayViewName thead {
+  background-color: rgb(168, 191, 238);
+}
+
+/* Target table cells within .holidayViewName */
+.holidayViewName td {
+  height: 60px;
+  text-align: center;
+  padding-left: 1%;
+  border-bottom: 1px solid grey;
+}
+
+/*Pagination CSS*/
+.holidayViewContainer .pagination 
+{
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.holidayViewContainer .paginationButton {
+  background-color: rgba(128, 128, 128, 0.7);
+  width: 30px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  padding: 5px 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.holidayViewContainer .paginationButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.holidayViewContainer .activePage {
+  background-color: rgb(28, 244, 35);
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .holidayViewContainer{
+    padding: 30px;
+  }
+
+  .holidayViewName p{
+    font-size: 16px;
+  }
+
+  .holidayViewName input{
+    font-size: 16px;
+    width: 35%;
+  }
+}

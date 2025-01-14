@@ -1,0 +1,31 @@
+.heading{
+  text-align: center;
+}
+/* styles for pagination Container */
+.pagination {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* styles for pagination buttons */
+.paginationButton {
+  background-color: rgba(185, 173, 173, 0.7);
+  width: 30px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  padding: 5px 5px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+.paginationButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+/* styles for active page - active button */
+.activePage {
+  background-color: rgb(28, 244, 35);
+  color: #ffffff;
+}

@@ -1,0 +1,44 @@
+/* styles for summary container */
+.receptionSummary {
+  display: flex;
+  column-gap: 10px;
+  margin: 0px 10px;
+  padding: 10px 0px;
+  justify-content: space-around;
+}
+
+/* common styles for stastics card */
+.receptionSummary .statisticsCard {
+  width: 25%;
+  padding: 5px;
+  height: 150px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+
+/* styles for icons in stastics */
+.receptionSummary .icons {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: rgba(141, 204, 183, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+  .receptionSummary{
+    flex-wrap: wrap;
+    column-gap: 0px;
+    margin: 0px;
+    justify-content: space-evenly;
+  }
+
+  .receptionSummary .statisticsCard {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+}

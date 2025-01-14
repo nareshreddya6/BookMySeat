@@ -1,0 +1,147 @@
+
+
+.form {
+    position: fixed; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-40%, -40%); 
+    background-color: white; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    width: 450px;
+    /* height: 500px; */
+    background-image: url("https://img.freepik.com/free-vector/wave-background_53876-115944.jpg?w=740&t=st=1708158193~exp=1708158793~hmac=7686a1b8de124950ca052de712c1480d2bc9c3c7e3020a682f46286c032d9201");
+    background-size: 90% 100%; 
+    background-position: right; 
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.form::-webkit-scrollbar {
+    width: 0; /* Hide scrollbar */
+}
+
+.userForm {
+    /* Styles for the form */
+    margin-top: 16px;
+}
+
+.workLocation{
+    margin: 1%;
+    padding: 1%;
+    border-radius: 2%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.projectName{
+    margin: 1%;
+    padding: 1%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.userForm label {
+    /* Styles for form labels */
+    display: block;
+    margin-bottom: 4px;
+}
+
+.userForm input {
+    /* Styles for form input fields */
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.userForm button[type="submit"] {
+    /* Styles for the submit button */
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-bottom: 10%;
+    margin-right: 2px;
+}
+
+.userForm button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+
+.responseModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   
+  .responseModalContent {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* max-width: 88%; */
+    width: 75%;
+    overflow: hidden;
+    text-align: center;
+  
+  }
+   
+  .closeX {
+    margin-top: 5px;
+    padding: 2%;
+    cursor: pointer;
+    border: none;
+    background-color: #4caf50;
+    font-size: 15px;
+    border-radius: 2px;
+    color: black;
+
+   
+  }
+   
+  .closeX:hover {
+    color: #555;
+  }
+   
+  .responseModal h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+  .responseModal p{
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .close{
+    color: black;
+    border: none;
+    background-color: red;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-left: 5px;
+  }
+
+  .clubTwoLabel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }

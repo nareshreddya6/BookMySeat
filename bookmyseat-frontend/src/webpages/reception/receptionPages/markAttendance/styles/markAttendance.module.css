@@ -1,0 +1,148 @@
+.markAttendanceDetails input {
+  font-size: 16px;
+  padding: 6px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.attendanceHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.attendanceHeader p {
+  font-size: 18px;
+}
+
+.attendanceHeader input {
+  font-size: 18px;
+}
+
+.markAttendanceDetails table {
+  margin-top: 2%;
+  white-space: nowrap;
+  border-spacing: 0;
+}
+
+.markAttendanceDetails {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 1% 2%;
+}
+
+.markAttendanceDetails table th {
+  height: 60px;
+  width: 300px;
+  text-align: center;
+  padding-left: 1%;
+  border-bottom: 1px solid grey;
+}
+
+.markAttendanceDetails table thead {
+  background-color: rgb(168, 191, 238);
+}
+
+.markAttendanceDetails td {
+  height: 60px;
+  width: 300px;
+  text-align: center;
+  padding-left: 1%;
+  border-bottom: 1px solid grey;
+}
+
+.markAttendanceDetails td input {
+  width: 90%;
+}
+
+.markAttendance {
+  width: fit-content;
+  font-size: 14px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #008542;
+  color: #ffffff;
+}
+
+.markAttendance:hover {
+  background-color: rgb(26, 186, 26);
+  /* color: black; */
+  cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+/*Pagination CSS*/
+.markAttendanceDetails .pagination {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.markAttendanceDetails .paginationButton {
+  background-color: rgba(128, 128, 128, 0.7);
+  width: 30px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  padding: 5px 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.markAttendanceDetails .paginationButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.markAttendanceDetails .activePage {
+  background-color: rgb(28, 244, 35);
+  color: #ffffff;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+
+  .markAttendanceDetails{
+    padding: 10px;
+  }
+  .attendanceHeader input,
+  .attendanceHeader p {
+    font-size: 16px;
+  }
+
+  .markAttendanceDetails table {
+    /* width: 100%; */
+    overflow: hidden;
+  }
+
+  .markAttendanceDetails table th {
+    min-width: 130px;
+  }
+
+  .markAttendanceDetails table td {
+    width: fit-content;
+  }
+
+  .markAttendanceDetails table th:nth-child(2),
+  .markAttendanceDetails table td:nth-child(2),
+  .markAttendanceDetails table th:nth-child(3),
+  .markAttendanceDetails table td:nth-child(3),
+  .markAttendanceDetails table th:nth-child(4),
+  .markAttendanceDetails table td:nth-child(4) {
+    display: none;
+  }
+
+  .markAttendanceDetails .attendeeList th:nth-child(2),
+  .markAttendanceDetails .attendeeList td:nth-child(2){
+    display: table-cell;
+  }
+}

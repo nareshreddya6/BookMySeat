@@ -1,0 +1,248 @@
+.maindetail {
+  display: flex;
+  justify-content: space-between; /* Aligns items to start and end */
+  align-items: center; /* Vertically centers items */
+}
+
+.bookingHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.maindetail input {
+  padding: 6px;
+  font-size: 16px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  width: 150px;
+  margin-right: 10px;
+}
+
+.maindetail label {
+  font-size: 16px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.togglebtn {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #45a049;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.togglebtn:hover {
+  background-color: #6ec573;
+  cursor: pointer;
+}
+
+.maindetail select {
+  width: 15%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid pink;
+}
+
+.back {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 2% 5%;
+}
+
+.back .usertable {
+  margin-top: 2%;
+  white-space: nowrap;
+  border-spacing: 0;
+}
+
+.back .usertable th {
+  height: 60px;
+  width: 300px;
+  text-align: center;
+  border-bottom: 1px solid grey;
+}
+
+.back .usertable thead {
+  background-color: rgb(168, 191, 238);
+}
+
+.back .usertable td {
+  height: 60px;
+  text-align: center;
+  border-bottom: 1px solid grey;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 11;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  gap: 10px;
+}
+
+/* .modalContent input{
+    width: 250px;
+    padding: 2%;
+    border-radius: 5px;
+  } */
+
+.modalContent button {
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 3px;
+  margin: 2px;
+}
+
+.save {
+  color: black;
+  background-color: #4caf50;
+  border-radius: 2px;
+  padding: 2%;
+  border: none;
+}
+
+.cancel {
+  color: black;
+  background-color: red;
+  border-radius: 2px;
+  padding: 2%;
+  border: none;
+}
+
+.rowContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customDropdown {
+  position: relative;
+  width: 150px;
+}
+
+.selectedFloor {
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  /* border: 2px solid red; */
+  padding: 2%;
+}
+
+.dropdownList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  /* display: none; */
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  background-color: #fff;
+}
+
+.dropdownList.show {
+  display: block;
+}
+
+.dropdownItem {
+  /* padding: 8px 12px; */
+  font-size: 14px;
+  color: black;
+  cursor: pointer;
+}
+
+.dropdownItem:hover {
+  background-color: lightblue;
+}
+
+/* Select Seat */
+.selectSeat {
+  width: 200px;
+  margin-left: 2px;
+}
+
+.seatNumber {
+  padding: 1%;
+}
+
+.formInput {
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  width: 100px;
+  padding: 1%;
+}
+
+.formLabel {
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 2px;
+}
+
+@media screen and (max-width: 768px){
+  .back{
+    width: fit-content;
+    max-width: fit-content;
+    min-width: fit-content;
+  }
+  .maindetail {
+    display: flex;
+    align-content: center;
+    width: fit-content;
+  }
+
+  .maindetail label {
+    font-size: 16px;
+    width: 80px;
+  }
+
+  .btn{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+   }
+  .bookingHeader input{
+    width: 150px;
+  }
+  .usertable{
+    overflow-x: auto;
+    white-space: nowrap; 
+   }
+
+  .modal{
+    align-items: center;
+    justify-content: center;
+  }
+}

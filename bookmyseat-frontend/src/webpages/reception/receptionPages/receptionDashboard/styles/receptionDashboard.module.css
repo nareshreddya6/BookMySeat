@@ -1,0 +1,37 @@
+.receptionStatistics {
+  background-color: rgba(112, 128, 144, 0.7);
+  height: max-content;
+}
+
+.receptionStatistics .statisticsCharts {
+  width: 100%;
+  height: calc(100vh - 250px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.receptionStatistics .statisticsCharts div {
+  width: 45%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .receptionStatistics {
+    height: 100%;
+  }
+  .receptionStatistics .statisticsCharts {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .receptionStatistics .statisticsCharts div {
+    width: 100%;
+  }
+}

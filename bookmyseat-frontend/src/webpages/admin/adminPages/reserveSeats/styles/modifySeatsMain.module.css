@@ -1,0 +1,45 @@
+/* styles for main Container */
+.modifySeatsMainContainer {
+  margin: 20px 10px;
+}
+/* styles for button container */
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+/* ṣtyles for reser button */
+.addReservationButton {
+  width: 20%;
+  height: 50px;
+  margin: 0 15px;
+  font-size: 20px;
+  background: #008542;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.addReservationButton:hover{
+  background: #2fba74;
+}
+/* styles for remove reservation buttons */
+.removeReservationButton {
+  width: 25%;
+  height: 50px;
+  font-size: 20px;
+  background: #e62222;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.removeReservationButton:hover{
+  background: #ed6666;
+}

@@ -1,0 +1,120 @@
+.adminNavbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  width: 70px;
+  height: 100vh;
+  background-color: rgb(224, 225, 221);
+  transition: width 0.3s linear;
+  padding-top: 80px;
+  z-index: 2;
+}
+
+.toggleMenu {
+  display: none;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  width: 50px;
+  background-color: rgb(224, 225, 221);
+  z-index: 2;
+}
+
+.adminNavbar:hover {
+  width: 250px;
+}
+
+.toggleMenu li {
+  list-style: none;
+}
+
+.adminNavbar ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.adminNavbar ul li:hover {
+  background-color: #517fa1;
+  color: aquamarine;
+  cursor: pointer;
+}
+
+.toggleMenu span,
+.adminNavbar span {
+  display: none;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s linear;
+}
+
+.adminNavbar:hover span {
+  display: inline-block;
+}
+
+.adminNavbar .active {
+  background-color: #184e77;
+  color: aquamarine;
+}
+
+.toggleMenu .link,
+.adminNavbar .link {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  justify-content: center;
+}
+
+.toggleMenu .link {
+  height: 40px;
+}
+
+.adminNavbar:hover .link {
+  justify-content: flex-start;
+}
+
+.togglelink .icons,
+.adminNavbar .icons {
+  width: 50px;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .toggleMenu {
+    display: block;
+  }
+
+  .adminNavbar {
+    display: none;
+  }
+
+  .toggled {
+    display: block;
+    width: 70px;
+    height: max-content;
+    right: 0;
+    left: calc(100% - 70px);
+  }
+
+  .toggled:hover .link {
+    justify-content: center;
+  }
+
+  .adminNavbar:hover {
+    width: 70px;
+  }
+
+  .adminNavbar:hover span {
+    display: none;
+  }
+}
+
+@media print{
+  .adminNavbar{
+    display: none;
+  }
+}

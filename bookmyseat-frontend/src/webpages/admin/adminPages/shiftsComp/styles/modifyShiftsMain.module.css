@@ -1,0 +1,204 @@
+.editShiftDetails h2 {
+  text-align: center;
+}
+
+.editShiftDetails input {
+  font-size: 16px;
+  padding: 6px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.shiftHeader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.shiftHeader input {
+  font-size: 18px;
+}
+
+.editShiftDetails table {
+  margin-top: 2%;
+  white-space: nowrap;
+  border-spacing: 0;
+}
+
+.editShiftDetails {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 2% 5%;
+}
+
+.editShiftDetails table th {
+  height: 60px;
+  width: 300px;
+  text-align: center;
+  padding-left: 1%;
+  border-bottom: 1px solid grey;
+}
+
+.editShiftDetails table thead {
+  background-color: rgb(168, 191, 238);
+}
+
+.editShiftDetails td {
+  height: 60px;
+  text-align: center;
+  padding-left: 1%;
+  border-bottom: 1px solid grey;
+}
+
+.editShiftDetails td span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.shiftModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  z-index: 11;
+}
+
+.shiftsModalContent {
+  width: 600px;
+  height: 300px;
+  background-color: rgb(228, 228, 228);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  border-radius: 5px;
+}
+
+.shiftsModalContent .selectLabels {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  font-size: 18px;
+}
+
+.shiftsModalContent .selectLabels label {
+  width: 30%;
+}
+
+.shiftsModalContent .selectLabels select {
+  width: 50%;
+  padding: 5px;
+  font-size: 18px;
+  border: none;
+  border-radius: 2px;
+}
+
+.shiftsModalContent .selectLabels select:focus {
+  outline: 2px solid rgb(0, 126, 0);
+}
+
+.shiftsModalContent .removeButton,
+.shiftsModalContent .addButton,
+.shiftsModalContent .cancelButton,
+.shiftsModalContent .mapButton {
+  width: 30%;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(28, 173, 33);
+}
+
+.shiftsModalContent .removeButton:hover,
+.shiftsModalContent .addButton:hover,
+.shiftsModalContent .cancelButton:hover,
+.shiftsModalContent .mapButton:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.shiftsModalContent .removeButton {
+  background-color: red;
+}
+
+.shiftsModalContent .modalBtns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.shiftsModalContent .mapButton,
+.shiftsModalContent .cancelButton {
+  width: 30%;
+  background-color: blue;
+}
+
+.shiftsModalContent .cancelButton {
+  background-color: rgb(100, 100, 100);
+}
+
+/*Pagination CSS*/
+.editShiftDetails .pagination {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.editShiftDetails .paginationButton {
+  background-color: rgba(128, 128, 128, 0.7);
+  width: 30px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  padding: 5px 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.editShiftDetails .paginationButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.editShiftDetails .activePage {
+  background-color: rgb(28, 244, 35);
+  color: #ffffff;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .editShiftDetails {
+    padding: 10px;
+  }
+  .editShiftDetails input {
+    font-size: 16px;
+  }
+
+  .editShiftDetails table th:nth-child(2),
+  .editShiftDetails table td:nth-child(2) {
+    display: none;
+  }
+}

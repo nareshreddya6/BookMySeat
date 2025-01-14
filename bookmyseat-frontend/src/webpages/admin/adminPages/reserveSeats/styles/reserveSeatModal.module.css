@@ -1,0 +1,79 @@
+.responseModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  width: 40%;
+  height: fit-content;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.modalHeading {
+  text-align: center;
+  margin: 10px 0px;
+  color: #333333;
+}
+
+.modalMessage {
+  text-align: center;
+  margin: 10px;
+  font-size: 1.2rem;
+  color: #666666;
+}
+
+.tableHeading {
+  height: 60px;
+  width: 300px;
+  text-align: center;
+  border-bottom: 1px solid grey;
+}
+
+.usertable thead {
+  background-color: rgb(168, 191, 238);
+}
+
+.usertable td {
+  height: 60px;
+  text-align: center;
+  border-bottom: 1px solid grey;
+}
+
+.buttonContainer {
+  margin: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.buttonContainer > button {
+  width: 80px;
+}
+
+.modalButton {
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.cancelButton {
+  background-color: rgba(230, 34, 34, 1);
+}
+.cancelButton:hover {
+  background-color: rgba(230, 34, 34, 0.8);
+}
+.confirmButton {
+  background-color: rgba(3, 69, 3, 1);
+}
+.confirmButton:hover {
+  background-color: rgba(3, 69, 3, 0.8);
+}

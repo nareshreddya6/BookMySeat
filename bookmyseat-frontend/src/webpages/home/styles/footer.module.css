@@ -1,0 +1,67 @@
+/* styles for footer main container */
+.footerMainContainer {
+  background-color: rgb(23, 23, 23);
+  color: white;
+}
+/* styles for footer container */
+.footerContainer {
+  max-width: 1320px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+/* styles for about us container and elements inside it */
+.aboutUsContainer > p {
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+.aboutUsContainer > h2 {
+  margin-bottom: 10px;
+}
+.aboutUsContainer > a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  border: 2px solid white;
+}
+.aboutUsContainer a:hover {
+  background-color: aquamarine;
+  color: black;
+  border: none;
+}
+/* styles for follow us container */
+.folllowUsContainer {
+  width: 300px;
+  /* margin-top: 20px; */
+}
+/* styles for container containing links of social profiles */
+.links {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.links > a {
+  color: #ccc;
+}
+.links > a:hover {
+  color: aquamarine;
+}
+
+/* styles for footer bottom */
+.footerbottom {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0px;
+  border-top: 1px solid #ccc;
+}
+/* styles for screen sizes liss than 760px */
+@media screen and (max-width: 760px) {
+  .folllowUsContainer {
+    margin: auto;
+    margin-top: 40px;
+  }
+}

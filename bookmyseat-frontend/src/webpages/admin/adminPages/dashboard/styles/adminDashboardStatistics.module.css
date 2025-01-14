@@ -1,0 +1,48 @@
+/* styles for summary container */
+.summary {
+  display: flex;
+  column-gap: 10px;
+  margin: 0px 10px;
+  padding: 10px 0px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.summary > div {
+  height: 250px;
+}
+/* styles for container containing day and date */
+.statisticsHead {
+  width: 10%;
+}
+/* styles for container containing count of attendees for the day */
+.markedAttendedStatistics {
+  width: 18%;
+}
+/* common styles for stastics card */
+.statisticsCard {
+  padding: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+/* styles for container containing details of other stastics */
+.otherStatistics {
+  width: 70%;
+  background-color: white;
+  display: flex;
+  border-radius: 10px;
+}
+.otherStatistics > div {
+  width: 25%;
+}
+/* styles for icons in stastics */
+.icons {
+  width: 100px;
+  height: 100px;
+  padding: 25px;
+  border-radius: 50%;
+  background-color: rgba(141, 204, 183, 0.3);
+}

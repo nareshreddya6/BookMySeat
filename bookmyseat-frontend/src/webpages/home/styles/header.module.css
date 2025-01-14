@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* syles for header */
+.header {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: transform 0.3s ease;
+}
+
+.header.hidden {
+  transform: translateY(-100%);
+}
+
+/* styles for logo */
+.logo {
+  width: 200px;
+  margin-left: 60px;
+  height: 80%;
+}
+.logo > img {
+  height: 100%;
+  width: 100%;
+}
+/* styles for link container */
+.linksContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 80px;
+  height: 100%;
+}
+.links {
+  margin: 0 10px;
+  background-color: rgb(41, 39, 39);
+  padding: 10px;
+  border-radius: 25px;
+}
+.links > a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+/* styles for screen sizes less than 760px */
+@media screen and (max-width: 760px) {
+  .logo {
+    margin-left: 10px;
+    width: 180px;
+  }
+  .linksContainer {
+    margin-right: 10px;
+  }
+}

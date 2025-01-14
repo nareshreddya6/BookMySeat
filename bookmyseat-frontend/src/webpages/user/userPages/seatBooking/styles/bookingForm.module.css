@@ -1,0 +1,394 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+.bookSeatContainer {
+  background-color: rgba(112, 128, 144, 0.7);
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+}
+
+.bookingPage {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formDivision {
+  width: 50%;
+  padding: 0px 10px;
+}
+
+.formHeading {
+  width: 100%;
+  padding: 5px 0px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.formDetails {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  border-radius: 2px;
+  padding: 20px 20px;
+  outline: 2px solid grey;
+  background-color: #fff;
+}
+
+.bookingType {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.bookingTypeBtn {
+  width: 180px;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 3px;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  /* font-weight: 600; */
+  background-color: #dbdbdb;
+}
+
+.bookingTypeBtn:hover {
+  color: #fff;
+  cursor: pointer;
+  background-color: royalblue;
+}
+
+.selectedBookingTypeBtn {
+  background-color: rgb(34, 82, 226);
+  color: #fff;
+}
+
+.registrationLabel {
+  text-align: left;
+  margin-right: 5px;
+  font-size: 20px;
+  color: #333;
+}
+
+.registerationInput {
+  width: 100%;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #bbbbbc;
+}
+
+.selectedDates,
+.floorSelection,
+.shiftNmonitor,
+.lunchNbeverage,
+.parking {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.selectedDates .startDate,
+.selectedDates .endDate,
+.floorSelection .customDropdown,
+.floorSelection .selectSeat,
+.shiftNmonitor .shiftSelection,
+.shiftNmonitor .monitorOptions,
+.lunchNbeverage .lunchOptions,
+.lunchNbeverage .beveragesOptions,
+.parking .parkingOptions,
+.parking .vehicleType {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selectedDates .startDate label,
+.selectedDates .endDate label,
+.beveragesOptions label,
+.lunchOptions label,
+.monitorOptions label,
+.parkingOptions label,
+.vehicleType label,
+.floorSelection .customDropdown p,
+.floorSelection .selectSeat label,
+.shiftNmonitor .shiftSelection label {
+  width: 50%;
+}
+
+.customDropdown .registrationLabel {
+  width: 50%;
+  white-space: nowrap;
+}
+
+.shiftSelection {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* custom dropdown */
+.customDropdown {
+  position: relative;
+  width: 40%;
+  border-radius: 5px;
+}
+
+.selectedFloor {
+  width: 100%;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #bbbbbc;
+}
+
+.selectedFloor i {
+  font-size: 14px;
+}
+
+.dropdownList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdownItem {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dropdownItem:hover {
+  background-color: #f0f0f0;
+}
+
+.seatNumber {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.seatNumber .registrationLabel {
+  width: 50%;
+}
+
+.seatNumber .registerationInput {
+  width: 100%;
+}
+
+.selectLabels {
+  font-size: 20px;
+  color: #333;
+}
+
+.bookingData {
+  width: 40%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookingDetails {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 500px;
+  outline: 2px solid grey;
+  border-radius: 2px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bookingDetails .heading {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.choosenInputs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.choosenInputLabel {
+  width: 40%;
+}
+
+.choosenInputValue {
+  width: 50%;
+}
+
+.choosenInputLabel {
+  color: rgb(62, 62, 62);
+  text-align: left;
+  padding-right: 10px;
+  font-size: 18px;
+}
+
+.choosenInputValue {
+  text-align: left;
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.RegisterationBtn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 30px 0px;
+}
+
+.registerationSubmitBtn {
+  width: 40%;
+  background-color: rgb(0, 128, 0);
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.registerationResetBtn {
+  width: 40%;
+  background-color: rgb(160, 3, 3);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.registerationSubmitBtn:hover {
+  background-color: rgb(37, 218, 37);
+  cursor: pointer;
+  color: black;
+}
+
+.registerationResetBtn:hover {
+  background-color: rgb(255, 0, 0);
+  cursor: pointer;
+  color: black;
+}
+
+.validationWarning {
+  height: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: red;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .bookSeatContainer {
+    height: 100%;
+    padding: 20px;
+  }
+
+  .bookingPage {
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .formDivision {
+    width: 100%;
+  }
+
+  .formDetails {
+    height: 100%;
+    gap: 20px;
+  }
+
+  .bookingType {
+    justify-content: space-evenly;
+  }
+
+  .bookingTypeBtn {
+    width: fit-content;
+  }
+
+  .selectedDates,
+  .floorSelection,
+  .shiftNmonitor,
+  .lunchNbeverage,
+  .parking {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .selectedDates .startDate,
+  .selectedDates .endDate,
+  .floorSelection .customDropdown,
+  .floorSelection .selectSeat,
+  .shiftNmonitor .shiftSelection,
+  .shiftNmonitor .monitorOptions,
+  .lunchNbeverage .lunchOptions,
+  .lunchNbeverage .beveragesOptions,
+  .parking .parkingOptions,
+  .parking .vehicleType {
+    width: 100%;
+  }
+
+  .bookingData {
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    padding-top: 0px;
+  }
+
+  .bookingDetails {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .bookingDetails .heading,
+  .bookingDetails .choosenInputs {
+    display: none;
+  }
+
+  .RegisterationBtn {
+    padding: 10px 0px;
+    padding-bottom: 30px;
+  }
+}
